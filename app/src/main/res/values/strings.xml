@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">AndroidizateApp</string>
+
+    <string name="err_login_usuario">USUARIO VACIO</string>
+    <string name="err_login_email">EMAIL VACIO</string>
+    <string name="err_login_password">PASSWORD VACIO</string>
+    <string name="err_login_password_erroneo">PASSWORD INVALIDO</string>
+    <string name="mensaje_bienvenida">Bienvenido %1$s!!! Podés empezar a enviar correos con tu mail: %2$s</string>
 </resources>

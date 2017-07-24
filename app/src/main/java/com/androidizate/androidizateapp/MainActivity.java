@@ -18,6 +18,6 @@ public class MainActivity extends AppCompatActivity {
         String mUserName = getIntent().getStringExtra("user_name");
         String mUserMail = getIntent().getStringExtra("user_mail");
 
-        tvMain.setText("Bienvenido " + mUserName + "!!! Pordés empezar a enviar correos con tu mail: " + mUserMail);
+        tvMain.setText(String.format(getString(R.string.mensaje_bienvenida), mUserName, mUserMail));
     }
 }

@@ -39,19 +39,19 @@ public class LoginActivity extends Activity {
 
     private boolean validLogin() {
         if (etUserName.getText().toString().trim().isEmpty()) {
-            etUserName.setError("USUARIO VACIO");
+            etUserName.setError(getString(R.string.err_login_usuario));
             return false;
         }
         if (etUserEmail.getText().toString().trim().isEmpty()) {
-            etUserEmail.setError("EMAIL VACIO");
+            etUserEmail.setError(getString(R.string.err_login_email));
             return false;
         }
         if (etUserPassword.getText().toString().trim().isEmpty()) {
-            etUserPassword.setError("PASSWORD VACIO");
+            etUserPassword.setError(getString(R.string.err_login_password));
             return false;
         }
         if (etUserPassword.getText().toString().trim() != "1234") {
-            etUserPassword.setError("PASSWORD INVALIDO");
+            etUserPassword.setError(getString(R.string.err_login_password_erroneo));
             return false;
         }
         return true;
